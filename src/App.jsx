@@ -9,7 +9,7 @@ function App() {
     return (
         <>
             <Header title={title} />
-            <main className="container mx-auto my-10 px-4  pb-20">
+            <main className="container mx-auto my-10 px-4">
                 <div className="container mx-auto p-4">
                     <Stopwatch />
                 </div>

@@ -20,3 +20,4 @@ Footer.propTypes = {
 }
 
 export default Footer
+//adding a comment
