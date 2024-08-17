@@ -78,10 +78,10 @@ const Stopwatch = () => {
                             : 'bg-yellow-500 hover:bg-yellow-600'
                     }`}
                     disabled={
-                        running &&
-                        (time.minutes > 0 ||
-                            time.seconds > 0 ||
-                            time.centiseconds > 0)
+                        !running &&
+                        time.minutes === 0 &&
+                        time.seconds === 0 &&
+                        time.centiseconds === 0
                     }
                 >
                     {running
