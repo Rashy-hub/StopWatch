@@ -77,12 +77,7 @@ const Stopwatch = () => {
                             ? 'bg-green-500 hover:bg-green-600'
                             : 'bg-yellow-500 hover:bg-yellow-600'
                     }`}
-                    disabled={
-                        !running &&
-                        time.minutes === 0 &&
-                        time.seconds === 0 &&
-                        time.centiseconds === 0
-                    }
+                    disabled={false} // Always enabled
                 >
                     {running
                         ? 'PAUSE'
@@ -92,6 +87,7 @@ const Stopwatch = () => {
                         ? 'START'
                         : 'RESUME'}
                 </button>
+
                 <button
                     onClick={handleReset}
                     className="py-2 px-4 rounded font-bold bg-red-500 hover:bg-red-600 text-white"
